@@ -18,19 +18,21 @@ more or less a port of https://github.com/Line-us/Line-us-Programming/blob/maste
 
 #### send()
 ```php
-$lineUs -> send($gcode,[$addr],[$port]);
+echo $lineUs -> send($gcode,[$addr],[$port]);
 ```
 Gcode sent as 'String'  
 Default Address: line-us.local  
-Default port: 1337   
+Default port: 1337  
+Returns line-us bot output  
 
 #### sendArray()
 ```php
-$lineUs -> sendArray($gcode,[$addr],[$port]);
+echo $lineUs -> sendArray($gcode,[$addr],[$port]);
 ```
 Gcode sent as 'Array'  
 Default Address: line-us.local  
-Default port: 1337   
+Default port: 1337 
+Returns line-us bot output  
 
 #### getIp()
 ```php
