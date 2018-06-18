@@ -31,7 +31,7 @@ echo $lineUs -> sendArray($gcode,[$addr],[$port]);
 ```
 Gcode sent as 'Array'  
 Default Address: line-us.local  
-Default port: 1337 
+Default port: 1337   
 Returns line-us bot output  
 
 #### getIp()
