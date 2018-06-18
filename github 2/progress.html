@@ -1,0 +1,17 @@
+<body>
+<h1 id="show" style="font-family:sans-serif;"></h1>
+<script>
+function getProgress() {
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            document.getElementById("show").innerHTML = this.responseText;
+            document.title = this.responseText;
+        }
+    };
+    xmlhttp.open("GET", "progress.php?q=true", true);
+    xmlhttp.send();
+}
+setInterval(getProgress,250);
+</script>
+</body>

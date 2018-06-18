@@ -1,0 +1,85 @@
+.controls {
+    position: absolute;
+    top: 0;
+    left: 25%;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.logout {
+    width:10%;
+    height:60px;
+    /*background-color:blue;
+    border-radius:3px;
+    border-style:solid;
+    border-width:2px;
+    border-color:black;*/
+    border-radius:0px;
+    position:absolute;
+    float:right;
+    display:block;
+    top:0%;
+    left:90%;
+}
+.dashboard {
+    width:10%;
+    height:60px;
+    /*background-color:blue;
+    border-radius:3px;
+    border-style:solid;
+    border-width:2px;
+    border-color:black;*/
+    border-radius:0px;
+    position:absolute;
+    float:left;
+    display:block;
+    top:0%;
+    left:80%;
+}
+
+.badge {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border-bottom-right-radius: 0;
+    background-color: darkred;
+    color: white;
+    font-size: 12px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+label {
+   display: flex;
+   align-items: center;
+   margin-bottom: 10px;
+}
+
+input[type="number"], input[type="text"] {
+    padding: 10px;
+    border: 1px solid darkred;
+    border-radius: 4px;
+    width: 100%;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.upload-label {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 10px 20px;
+    display: inline-block;
+    background: darkred;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+}

@@ -1,0 +1,138 @@
+body {
+    height:100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Baloo', sans-serif;
+    overflow:hidden;
+}
+
+*:focus {
+  outline:none;
+}
+
+h1 {
+    letter-spacing: 10px;
+    text-transform: uppercase;
+}
+
+h1:after {
+    content: "Line-us Remake";
+}
+
+h1:hover:after {
+    content: "By FX Morin"
+}
+
+h2 {
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 5px;
+    font-weight: normal;
+}
+
+h2.invert {
+    color: white;
+}
+
+nav {
+    width: 100%;
+    height: 60px;
+    background: linear-gradient(to right, darkred, orange);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: calc(100% - 60px);
+    height: -moz-calc(100% - 60px);
+    height: -webkit-calc(100% - 60px);
+}
+
+.pane {
+    flex-grow: 1;
+    width: 50%;
+    position: relative;
+    overflow: hidden;
+}
+
+.pane:first-child {
+    flex-shrink: 0;
+}
+
+.pane:last-child {
+    background-color: #2D3538;
+    flex-shrink: 1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.sketch-canvas {
+    margin: 0 10px;
+    background: white;
+    outline: 2px solid darkred;
+}
+
+.preview-canvas {
+    background: white;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.9);
+}
+
+.menu-item-container.ui-show-colour {
+    display: none !important;
+}
+
+.menu-item-container.ui-show-stroke {
+    display: none !important;
+}
+
+.output {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 60%;
+    height: 60%;
+    transform: translateX(-50%) translateY(-300%);
+    -moz-transform: translateX(-50%) translateY(-300%);
+    -webkit-transform: translateX(-50%) translateY(-300%);
+    transition: 1s;
+    -webkit-transitions: 1s;
+    border: 4px solid darkred;
+    border-radius: 4px;
+    background: white;
+    z-index: 1000000;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.4);
+}
+
+.output.show {
+    transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+}
+
+.output .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    z-index: 100000;
+}
+
+.output-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    white-space: pre-wrap;
+}
