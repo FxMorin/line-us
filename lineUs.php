@@ -42,7 +42,7 @@ function sendArray($gcode,$addr= "line-us.local", $port = "1337") {
   fclose($client);
   return $output;
 }
-function getIp($port = "1337") {
+function findIp($port = "1337") {
   ignore_user_abort(true);     ## prevent refresh from aborting file operations and hosing file
   $counter = 0;
   while ($counter <= 254) {
