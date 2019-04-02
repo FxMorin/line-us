@@ -1,5 +1,5 @@
 # line-us
-basic line-us example using php
+basic line-us library/example using php
 
 sends an array of commands to the line-us drawing machine via a Socket connection.
 
