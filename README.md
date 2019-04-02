@@ -8,11 +8,11 @@ more or less a port of https://github.com/Line-us/Line-us-Programming/blob/maste
 
 ## howto
 
-- clone repository
+- clone the repository
 - download the lineUs.php file to your project
 - add the lineUs class to your project by including it ``` include("../path/to/file/lineUs.php");```
 - use the php line us class by doing ``` $lineUs->send($gcode);```
-- be sure to be in the same wifi as the machine that is running the php
+- be sure that the php server is running on the same wifi network as the Line-Us Robot
 
 ## extra
 
