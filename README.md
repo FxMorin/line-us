@@ -34,9 +34,9 @@ Default Address: line-us.local
 Default port: 1337   
 Returns line-us bot output  
 
-#### getIp()
+#### findIp()
 ```php
-echo $lineUs -> getIp([$port]);
+echo $lineUs -> findIp([$port]);
 ```
-return the first ip found with the port  
+return the first ip found with the port
 Default port: 1337  
