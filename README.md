@@ -5,6 +5,8 @@ sends an array of commands to the line-us drawing machine via a Socket connectio
 
 more or less a port of https://github.com/Line-us/Line-us-Programming/blob/master/Python/HelloWorld.py#L1
 
+The line-us github is located at: https://github.com/Line-us/Line-us-Programming
+
 
 ## howto
 
